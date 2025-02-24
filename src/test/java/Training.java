@@ -29,8 +29,6 @@ public class Training {
         passwordField.click();
         passwordField.setValue("Yauheni7347156!");
         logInButton.click();
-
-
     }
 
     @AfterTest
