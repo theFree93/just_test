@@ -8,8 +8,8 @@ import static com.codeborne.selenide.Selenide.$x;
 
 
 public class Training {
-    private static final String user = "fortvision_admin";
-    private static final String password = "aYLm3Z2am16jjKSqq501HahnBjKd0h";
+
+
     private static final SelenideElement searchInput = $x("//dev['']");
     private static final SelenideElement emailField = $x("//input[@id='email']");
     private static final SelenideElement passwordField = $x("//input[@id='password']");
@@ -18,6 +18,8 @@ public class Training {
     @BeforeTest
     public void start(){
         Browser.getBrowser().get("https://my.fortvision.com/");
+        Browser.getBrowser().get("https://my.fortvision.com/");
+
     }
 
     @Test
