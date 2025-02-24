@@ -19,7 +19,7 @@ public class Training {
 
     @BeforeTest
     public void start(){
-        Browser.getBrowser().get("https://my.fortvision.com");
+        Browser.getBrowser().get("https://my.fortvision.com/");
     }
 
     @Test
