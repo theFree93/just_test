@@ -8,7 +8,6 @@ import static com.codeborne.selenide.Selenide.$x;
 
 
 public class Training {
-    private static final String serverUrl = "jdbc:mysql://fortvision.cluster-ro-c1pinvi6ti7x.eu-west-1.rds.amazonaws.com:3306/";
     private static final String user = "fortvision_admin";
     private static final String password = "aYLm3Z2am16jjKSqq501HahnBjKd0h";
     private static final String query = "SELECT * FROM dashboard.account_details ad";
