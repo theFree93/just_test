@@ -37,7 +37,7 @@ public class Training {
     private static final SelenideElement doneButton = $x("//button[contains(@class, 'megadash-button-blue-round')]");
 
     @BeforeTest
-    public void start(){
+    public void start() {
         Browser.getBrowser().get("https://my.fortvision.com/");
         Browser.getBrowser().manage().window().maximize();
     }
