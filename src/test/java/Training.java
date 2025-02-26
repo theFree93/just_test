@@ -14,7 +14,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class Training {
 
 
-    private static final SelenideElement searchInput = $x("//dev['']");
+    private static final SelenideElement searchInput = $x("//dev['asdas']");
     private static final SelenideElement emailField = $x("//input[@id='email']");
     private static final SelenideElement passwordField = $x("//input[@id='password']");
     private static final SelenideElement logInButton = $x("//button[contains(@class, 'button-blue')]");
