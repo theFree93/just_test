@@ -71,7 +71,6 @@ public class Training {
         campaignList.doubleClick();
         Selenide.executeJavaScript("arguments[0].setSelectionRange(0, arguments[0].value.length);", campaignList);
         String createdCampaignName = Selenide.executeJavaScript("return arguments[0].value.substring(arguments[0].selectionStart, arguments[0].selectionEnd);", campaignList);
-        System.out.println(createdCampaignName);
         Assert.assertEquals(selectedText, createdCampaignName);
     }
 
