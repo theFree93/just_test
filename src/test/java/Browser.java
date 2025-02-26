@@ -1,19 +1,18 @@
 import com.codeborne.selenide.WebDriverRunner;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Browser {
 
     private static WebDriver driver;
 
-   // private Browser() {}
+    // private Browser() {}
 
     public static WebDriver getBrowser() {
         if (driver == null) {
 
-                WebDriverManager.firefoxdriver().setup();
+            WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver();
             WebDriverRunner.setWebDriver(driver);
         }
