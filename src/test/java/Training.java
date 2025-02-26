@@ -1,5 +1,4 @@
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import org.testng.Assert;
@@ -8,13 +7,11 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import static com.codeborne.selenide.Condition.attribute;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$x;
+import static com.codeborne.selenide.Selenide.actions;
 
 
 public class Training {
-
-
-    private static final SelenideElement searchInput = $x("//dev['asdas']");
     private static final SelenideElement emailField = $x("//input[@id='email']");
     private static final SelenideElement passwordField = $x("//input[@id='password']");
     private static final SelenideElement logInButton = $x("//button[contains(@class, 'button-blue')]");
@@ -51,6 +48,7 @@ public class Training {
         logInButton.click();
         onSitePage.click();
         createProjectButton.click();
+        campaignName.doubleClick();
         Selenide.executeJavaScript("arguments[0].setSelectionRange(0, arguments[0].value.length);", campaignName);
         String selectedText = Selenide.executeJavaScript("return arguments[0].value.substring(arguments[0].selectionStart, arguments[0].selectionEnd);", campaignName);
         System.out.println(selectedText);
